@@ -1,0 +1,29 @@
+# Put each phase such as 'initial_enum' under the root 'category' heading
+# Under each category, group the commands by tool
+# Under each tool provide the different types of commands you can run, e.g. standard nmap scan, or all ports scan etc.
+# Use <IP> and <DOMAIN> as placeholders for the ip and domain values passed to the script
+category:
+  initial_enum:
+    nmap_cmd:
+      standard:
+          cmd: sudo nmap -sC -sV -T4 -A <IP>
+          description: It runs a besic scan
+      all_tcp:
+          cmd: sudo nmap -sC -sV -T4 -A -p- <IP>
+          description: Run nmap scan against all TCP ports
+      all_udp:
+          cmd: sudo nmap -sC -sV -sU <IP>
+          description: Run map scan against all UDP ports
+      vuln:
+          cmd: sudo namp -sV -T4 -A --script=vuln* -p- <IP>
+          description: Scan for vulnerabilities using standard namp scripts
+  web_enum:
+    dirseach_cmd:
+      standard::
+          cmd: dirseach -u <IP>
+          description: Standard quick sub-directory scanning
+  ad_enum:
+    ldapsearch_cmd:
+      standard:
+          cmd: ldapsearch
+          description: PLACEHOLDER
