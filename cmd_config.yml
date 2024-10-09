@@ -7,7 +7,7 @@ category:
     nmap_cmd:
       standard:
           cmd: sudo nmap -sC -sV -T4 -A <IP>
-          description: It runs a besic scan
+          description: It runs a basic TCP scan of the top ports
       all_tcp:
           cmd: sudo nmap -sC -sV -T4 -A -p- <IP>
           description: Run nmap scan against all TCP ports
@@ -15,7 +15,7 @@ category:
           cmd: sudo nmap -sC -sV -sU <IP>
           description: Run map scan against all UDP ports
       vuln:
-          cmd: sudo namp -sV -T4 -A --script=vuln* -p- <IP>
+          cmd: sudo nmap -sV -T4 -A --script=vuln* -p- <IP>
           description: Scan for vulnerabilities using standard namp scripts
   web_enum:
     dirseach_cmd:
