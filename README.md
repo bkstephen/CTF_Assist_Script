@@ -32,5 +32,5 @@ python3 main.py -i <IP> -d <DOMAIN> #Domain is optional
   GO BACK                                                                                                                                                                                     
 </pre>
 
-### Contributing
+### Contributing:
 Feel free to raise a PR with your suggestions or additinal commands to add to the YAML file
